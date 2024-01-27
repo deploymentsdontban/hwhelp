@@ -36,103 +36,42 @@ include includes/navbar
 
 .container.text-center
     -if (game == "retrobowl")
-        iframe#game.lazy-loaded(src='https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
-
+        .game-container
+            iframe#game.lazy-loaded(src='https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+            button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
 .container.text-center
     -if (game == "cuttherope")
-        iframe#game.lazy-loaded(src='https://app-97515.games.s3.yandex.net/97515/u1824c0o9xlk2nm9hlcxtbs4l6ysl44s/index.html', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        .game-container
+            iframe#game.lazy-loaded(src='https://app-97515.games.s3.yandex.net/97515/u1824c0o9xlk2nm9hlcxtbs4l6ysl44s/index.html', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+            button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "1v1")
+        .game-container
         iframe#game.lazy-loaded(src='https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "deadshot")
+        .game-container
         iframe#game.lazy-loaded(src='https://deadshot.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "krunker")
+        .game-container
         iframe#game.lazy-loaded(src='https://krunker.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "justfall")
+        .game-container
         iframe#game.lazy-loaded(src='https://www.crazygames.com/embed/justfall-lol', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "paper")
         .jumbotron.text-center
             h1.display-3 Press the button below to play the game!
@@ -140,21 +79,11 @@ include includes/navbar
             form#uv-form
                 input#uv-address.form-control(type='submit', value='paper.io')     
     -else if (game == "shellshock")
+        .game-container
         iframe#game.lazy-loaded(src='https://www.crazygames.com/embed/shellshockersio', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }    
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page    
     -else if (game == "geforce")
         .jumbotron.text-center
             h1.display-3 Press the button below to play the game!
@@ -162,21 +91,11 @@ include includes/navbar
             form#uv-form
                 input#uv-address.form-control(type='submit', value='play.geforcenow.com')      
     -else if (game == "venge")
+        .game-container
         iframe#game.lazy-loaded(src='https://venge.io', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "minecraft")
         .jumbotron.text-center
             h1.display-3 Press the button below to play the game!
@@ -193,133 +112,83 @@ include includes/navbar
             h1 &#x2800;
             h1 If any are not working, right click and copy link then try putting their links through our url bar on the home page!
     -else if (game == "sf")
+        .game-container
         iframe#game.lazy-loaded(src='https://scratch.mit.edu/projects/766535392/embed', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "slope")
+        .game-container
         iframe#game.lazy-loaded(src='https://advanced-channeler.02.gz-associates.com/?t=tmm-slope', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "run3")
+        .game-container
         iframe#game.lazy-loaded(src='https://lekug.github.io/tn6pS9dCf37xAhkJv/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "cc")
+        .game-container
         iframe#game.lazy-loaded(src='https://idle-js-games.github.io/cookieclicker/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "gettingover")
+        .game-container
         iframe#game.lazy-loaded(src='https://scratch.mit.edu/projects/389464290/embed', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "subwaysurf")
+        .game-container
         iframe#game.lazy-loaded(src='https://dddavit.github.io/subway/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "fnaf")
+        .game-container
         iframe#game.lazy-loaded(src='https://run3.io/popgame/fnaf/fnaf1/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
-            }
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
     -else if (game == "beans")
+        .game-container
         iframe#game.lazy-loaded(src='https://lolbeans.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
-        button(onclick='openwindow()') Fullscreen
-        script.
-            function openwindow() {
-                var win = window.open();
-                win.document.body.style.margin = '0';
-                win.document.body.style.height = '100vh';
-                var iframe = win.document.createElement('iframe');
-                iframe.style.border = 'none';
-                iframe.style.width = '100%';
-                iframe.style.height = '100%';
-                iframe.style.margin = '0';
-                iframe.src = document.querySelector('#game').src;
-                win.document.body.appendChild(iframe);
+        button(onclick='toggleFullscreen()') Fullscreen
+            | &nbsp;
+            button(onclick='openInNewPage()') Open in New Page
+script.
+    function toggleFullscreen() {
+        var iframe = document.querySelector('#game');
+        var button = document.querySelector('button');
+
+        if (!iframe.fullscreenElement) {
+            iframe.requestFullscreen().catch(err => {
+                console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+            });
+            button.textContent = 'Exit Fullscreen';
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
             }
+            button.textContent = 'Fullscreen';
+        }
+    }
+
+    function openInNewPage() {
+        var win = window.open();
+        win.document.body.style.margin = '0';
+        win.document.body.style.height = '100vh';
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.margin = '0';
+        iframe.src = document.querySelector('#game').src;
+        win.document.body.appendChild(iframe);
+    }
 
 script(src='uv/uv.bundle.js')
 script(src='uv/uv.config.js')
