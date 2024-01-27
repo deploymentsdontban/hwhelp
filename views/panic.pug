@@ -1,0 +1,13 @@
+doctype html
+head
+include includes/head
+include includes/navbar
+.jumbotron.text-center
+  h1.display-3 Set the panic link below!
+  h1.display-3  Do not include https:// in your link
+.container
+  form
+    input#panicForm.form-control(type='text', placeholder='Surf the web unblocked!')
+script(src='keyp.js')
+script(src='panic.js')
+span(style='position: absolute; bottom: 0pt; right: 0pt;')

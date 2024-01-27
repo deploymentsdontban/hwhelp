@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    include includes/head
+    include includes/navbar
+
+  body
+  .container(style='text-align: center;')
+    .jumbotron.text-center
+      h1.display-3 All Links
+      hr
+
+    // Add your links here
+    each link in ['https://hwhelp.cc/', 'https://classmgmt.xyz/', 'https://hwhelp.legitzenith.com/', 'https://helping.4webhelp.ca/', 'https://explanations.uk.to/', 'https://mathexplain.fr.to/', 'https://math.hs.vc/', 'https://computer.8bit.ca/', 'https://english.cbu.net/', 'https://weather.cylone.net/', 'https://biology.dyn.mk/', 'https://hw.billigerhost.com/']
+      div(style='margin-bottom: 10px;')
+        a(href=link, style={ 'font-size': '18px', 'color': '#3366cc', 'text-decoration': 'none' })
+          | #{link}
+        button(onclick=`checkAvailability('${link}', this)`, style={ 'margin-left': '10px' }) Check
+        img(id=`status-image-${link}`, src='https://i.giphy.com/w7jtVnXxMOq08.webp', style='display: none; width: 25px; height: 25px; margin-left: 10px;')
+      br
+
+  script(src='keyp.js')
+  script.
+    async function checkAvailability(link, button) {
+      const statusImage = document.getElementById(`status-image-${link}`);
+  
+      // Show loading image
+      statusImage.style.display = 'inline-block';
+
+      try {
+        const response = await fetch(link);
+
+        if (response.status === 200) {
+          // Display the success image
+          statusImage.src = 'https://www.freeiconspng.com/uploads/checkmark-png-transparent-33.png';
+        } else {
+          // Display the failure image
+          statusImage.src = 'https://www.freeiconspng.com/uploads/x-png-18.png';
+          alert(`Link ${link} is not available. Status: ${response.status}`);
+        }
+      } catch (error) {
+        console.error('Error checking link availability:', error);
+        // Display the failure image on error
+        statusImage.src = 'https://www.freeiconspng.com/uploads/x-png-18.png';
+      } finally {
+        // Hide the loading image
+        statusImage.style.display = 'inline-block';
+    
+        // Remove the button and display the image
+        button.style.display = 'none';
+        statusImage.style.display = 'inline-block';
+      }
+    }
+
+  span(style='position: absolute; bottom: 0pt; right: 0pt;')
+  h1 &#x2800;

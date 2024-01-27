@@ -1,0 +1,327 @@
+doctype html
+head
+  // Google tag (gtag.js)
+  script(async='', src='https://www.googletagmanager.com/gtag/js?id=G-B85FZY0ZKE')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-B85FZY0ZKE');
+  script(async='', src='https://arc.io/widget.min.js#PahYNby2')
+  script(async='', src='https://fundingchoicesmessages.google.com/i/pub-3715996854656266?ers=1', nonce='UO2Mk0vABFNd-f6p9AC52w')
+  script(nonce='UO2Mk0vABFNd-f6p9AC52w').
+    (function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title &shy;
+  script(src='https://code.jquery.com/jquery-3.6.0.js', integrity='sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=', crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p', crossorigin='anonymous', defer='')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3', crossorigin='anonymous')
+  link(rel='stylesheet', href='https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css')
+  link(rel='stylesheet', href='/css/global.css')
+  script(async='', src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3715996854656266', crossorigin='anonymous')
+  script(type='text/javascript').
+    window._mNHandle = window._mNHandle || {};
+    window._mNHandle.queue = window._mNHandle.queue || [];
+    medianet_versionId = "3121199";
+  script(src='https://contextual.media.net/dmedianet.js?cid=8CU6A4582', async='async')
+  script(src='uv/uv.bundle.js', defer='')
+  script(src='uv/uv.config.js', defer='')
+  script(src='register-sw.js', defer='')
+  script(src='search.js', defer='')
+  script(src='indexButton.js', defer='')
+  script(src='https://kit.fontawesome.com/ad85fbe2a6.js', crossorigin='anonymous')
+include includes/navbar
+
+.container.text-center
+    -if (game == "retrobowl")
+        iframe#game.lazy-loaded(src='https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://274079163-174037128449362058.preview.editmysite.com/uploads/b/139890129-899796311729593176/files/rtbl.xml', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+
+.container.text-center
+    -if (game == "cuttherope")
+        iframe#game.lazy-loaded(src='https://app-97515.games.s3.yandex.net/97515/u1824c0o9xlk2nm9hlcxtbs4l6ysl44s/index.html', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "1v1")
+        iframe#game.lazy-loaded(src='https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "deadshot")
+        iframe#game.lazy-loaded(src='https://deadshot.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "krunker")
+        iframe#game.lazy-loaded(src='https://krunker.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "justfall")
+        iframe#game.lazy-loaded(src='https://www.crazygames.com/embed/justfall-lol', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "paper")
+        .jumbotron.text-center
+            h1.display-3 Press the button below to play the game!
+        .container
+            form#uv-form
+                input#uv-address.form-control(type='submit', value='paper.io')     
+    -else if (game == "shellshock")
+        iframe#game.lazy-loaded(src='https://www.crazygames.com/embed/shellshockersio', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }    
+    -else if (game == "geforce")
+        .jumbotron.text-center
+            h1.display-3 Press the button below to play the game!
+        .container
+            form#uv-form
+                input#uv-address.form-control(type='submit', value='play.geforcenow.com')      
+    -else if (game == "venge")
+        iframe#game.lazy-loaded(src='https://venge.io', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "minecraft")
+        .jumbotron.text-center
+            h1.display-3 Press the button below to play the game!
+        .container.text-center
+            a.px-2(href='https://ubg100.github.io/games/eaglercraft/index.html', target='_blank', style='width:100%;display:block;text-align:center;padding:.5em;background-color:#0073e2;color:#fff;border-radius:4px;box-shadow:0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);text-decoration:none') Link 1
+            h1 &#x2800;
+            a(href='https://now.gg/apps/mojang/2534/minecraft-trial.html', target='_blank', style='width:100%;display:block;text-align:center;padding:.5em;background-color:#0073e2;color:#fff;border-radius:4px;box-shadow:0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);text-decoration:none') Link 2
+            h1 &#x2800;
+            a(href='https://scratch.mit.edu/projects/10128407/embed', target='_blank', style='width:100%;display:block;text-align:center;padding:.5em;background-color:#0073e2;color:#fff;border-radius:4px;box-shadow:0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);text-decoration:none') Link 3
+            h1 &#x2800;
+            a(href='https://classic.minecraft.net/', target='_blank', style='width:100%;display:block;text-align:center;padding:.5em;background-color:#0073e2;color:#fff;border-radius:4px;box-shadow:0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);text-decoration:none') Link 4
+            h1 &#x2800;
+            a(href='/uv/service/hvtrs8%2F-nmw%2Cge%2Fcprs-bnozd-53260-bnozd%2Fim.jtol', target='_blank', style='width:100%;display:block;text-align:center;padding:.5em;background-color:#0073e2;color:#fff;border-radius:4px;box-shadow:0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);text-decoration:none') Link 5
+            h1 &#x2800;
+            h1 If any are not working, right click and copy link then try putting their links through our url bar on the home page!
+    -else if (game == "sf")
+        iframe#game.lazy-loaded(src='https://scratch.mit.edu/projects/766535392/embed', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "slope")
+        iframe#game.lazy-loaded(src='https://advanced-channeler.02.gz-associates.com/?t=tmm-slope', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "run3")
+        iframe#game.lazy-loaded(src='https://lekug.github.io/tn6pS9dCf37xAhkJv/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "cc")
+        iframe#game.lazy-loaded(src='https://idle-js-games.github.io/cookieclicker/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "gettingover")
+        iframe#game.lazy-loaded(src='https://scratch.mit.edu/projects/389464290/embed', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "subwaysurf")
+        iframe#game.lazy-loaded(src='https://dddavit.github.io/subway/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "fnaf")
+        iframe#game.lazy-loaded(src='https://run3.io/popgame/fnaf/fnaf1/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+    -else if (game == "beans")
+        iframe#game.lazy-loaded(src='https://lolbeans.io/', scrolling='no', data-auto_height='false', allowfullscreen='', data-ruffle-polyfilled='', width='100%', height='700')
+        button(onclick='openwindow()') Fullscreen
+        script.
+            function openwindow() {
+                var win = window.open();
+                win.document.body.style.margin = '0';
+                win.document.body.style.height = '100vh';
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.src = document.querySelector('#game').src;
+                win.document.body.appendChild(iframe);
+            }
+
+script(src='uv/uv.bundle.js')
+script(src='uv/uv.config.js')
+script(src='indexButton.js')
+script(src='keyp.js')
