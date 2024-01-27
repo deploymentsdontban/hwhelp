@@ -23,7 +23,7 @@ For quick access to all our resources, visit our All Links page: [HWHelp All Lin
 We welcome contributions from the community! If you'd like to contribute to the development of HWHelp, please send us a message in our [Discord](https://hwhelp.cc/discord).
 
 ### License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ### Contact Us
 If you have any questions, suggestions, or feedback, feel free to reach out to us via [Discord](https://hwhelp.cc/discord).
