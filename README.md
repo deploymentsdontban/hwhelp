@@ -1,4 +1,4 @@
-### **HWHelp**
+### **How to JOIN**
 
 Scroll down to the bottom of the page and for name and email enter hwhelp for both and join!
 
